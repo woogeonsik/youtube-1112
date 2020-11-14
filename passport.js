@@ -7,6 +7,7 @@ import User from "./models/User";
 
 passport.use(User.createStrategy());
 
+
 passport.use(
     new GithubStrategy({
         clientID: process.env.GH_ID,
